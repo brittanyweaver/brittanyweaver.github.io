@@ -122,3 +122,9 @@
     text-decoration: none;
     color: #9A9AA0;
   }
+
+  hr {
+    display: block; height: px;
+    border: 0; border-top: 1px solid white;
+    margin: 1em 0; padding: 0;
+    }
