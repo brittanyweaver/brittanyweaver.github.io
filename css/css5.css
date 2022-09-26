@@ -1,8 +1,9 @@
 * body {
     background: #CBCCD3;
-    position: absolute;
-    width: 716px;
-    height: 74px;
+    /* position: absolute; */
+    max-width: 716px;
+    /* height: 74px; */
+    margin: 0 auto;
 
     font-family: 'Manrope';
     font-style: normal;
@@ -15,24 +16,24 @@
   }
   
   h1 {
-    position: absolute;
-    width: 1384px;
-    height: 148px;
+    /* position: absolute; */
+    /* width: 1384px;
+    height: 148px; */
 
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
     font-size: 90px;
-    line-height: 123px;
+    /* line-height: 123px; */
     text-align: left;
 
     color: #FFFFFF;
   }
   
    h2 {
-    position: absolute;
-    width: 1244px;
-    height: 148px;
+    /* position: absolute; */
+    /* width: 1244px;
+    height: 148px; */
 
     font-family: 'Manrope';
     font-style: normal;
@@ -46,8 +47,8 @@
   
   h3 {
     position: absolute;
-    width: 1116px;
-    height: 105px;
+    /* width: 1116px;
+    height: 105px; */
 
     font-family: 'Manrope';
     font-style: normal;
@@ -61,8 +62,8 @@
 
   h4 {
     position: absolute;
-    width: 1048px;
-    height: 98px;
+    /* width: 1048px;
+    height: 98px; */
 
     font-family: 'Manrope';
     font-style: normal;
@@ -76,8 +77,8 @@
   
   h5 {
     position: absolute;
-    width: 923px;
-    height: 89px;
+    /* width: 923px;
+    height: 89px; */
 
     font-family: 'Manrope';
     font-style: normal;
@@ -91,8 +92,8 @@
 
   h6 {
     position: absolute;
-    width: 716px;
-    height: 74px;
+    /* width: 716px;
+    height: 74px; */
 
     font-family: 'Manrope';
     font-style: normal;
@@ -104,4 +105,20 @@
     color: #FFFFFF;
   }
 
+  .britt_image{
+    float:left;
+    margin-right: 50px;
+  }
+
+  p{
+    max-width: 100;
+  }
   
+  a:visited {
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #9A9AA0;
+  }
