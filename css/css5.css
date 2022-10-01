@@ -105,12 +105,12 @@
     color: #FFFFFF;
   }
 
-  .britt_image{
+  .britt_image {
     float:left;
     margin-right: 50px;
   }
 
-  p{
+  p {
     max-width: 100;
   }
   
@@ -127,4 +127,51 @@
     display: block; height: px;
     border: 0; border-top: 1px solid white;
     margin: 1em 0; padding: 0;
+    }
+
+    .photos {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* fr stands for fraction - we want two columns that take up half of the avaliable space (2)*/
+      gap: 1px;
+    }
+  
+    .feature {
+        width: 200px;
+        float: left;
+        padding: 20px;
+    }
+
+
+  @media screen and (max-width: 450px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      ;
+      gap: 5px;
+      width: 80%;
+      margin: auto;
+    }
+    body {
+      background: black;
+      max-width: 120px;
+      
+    }
+  }
+
+  @media screen and (min-width: 1080) and (max-width: 1900) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      ;
+      gap: 5px;
+      width: 80%;
+      margin: auto;
+    }
+    body {
+      background: black;
+    }
+    
     }
