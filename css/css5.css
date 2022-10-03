@@ -1,107 +1,77 @@
 * body {
     background: #CBCCD3;
-    /* position: absolute; */
     max-width: 716px;
-    /* height: 74px; */
     margin: 0 auto;
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
     text-align: left;
-
     color: #FFFFFF;
   }
   
   h1 {
-    /* position: absolute; */
-    /* width: 1384px;
-    height: 148px; */
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
     font-size: 90px;
-    /* line-height: 123px; */
     text-align: left;
-
+    line-height: 80px;
     color: #FFFFFF;
   }
   
    h2 {
-    /* position: absolute; */
-    /* width: 1244px;
-    height: 148px; */
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 109px;
     text-align: left;
-
     color: #FFFFFF;
   } 
   
   h3 {
     position: absolute;
-    /* width: 1116px;
-    height: 105px; */
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-size: 70px;
     line-height: 96px;
     text-align: center;
-
     color: #FFFFFF;
   }
 
   h4 {
     position: absolute;
-    /* width: 1048px;
-    height: 98px; */
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-size: 60px;
     line-height: 82px;
     text-align: center;
-
     color: #FFFFFF;
   }
   
   h5 {
     position: absolute;
-    /* width: 923px;
-    height: 89px; */
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
     line-height: 68px;
     text-align: center;
-
     color: #FFFFFF;
   }
 
   h6 {
     position: absolute;
-    /* width: 716px;
-    height: 74px; */
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
     line-height: 55px;
     text-align: center;
-
     color: #FFFFFF;
   }
 
@@ -145,33 +115,39 @@
     }
 
 
-  @media screen and (max-width: 450px) {
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      ;
-      gap: 5px;
-      width: 80%;
-      margin: auto;
+  @media screen and (max-width: 450px) { 
+    h1 {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      text-align: left;
+      line-height: 10px;
+      text-align: center;
+      color: #FFFFFF;
     }
-    body {
-      background: black;
-      max-width: 120px;
-      
-    }
-  }
 
-  @media screen and (min-width: 1080) and (max-width: 1900) {
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      ;
-      gap: 5px;
-      width: 80%;
-      margin: auto;
-    }
-    body {
-      background: black;
+    .britt_image {
+      height: 300px;
+      width: auto;
+      margin: 30px;
     }
     
+    p {
+      margin: 15px;
     }
+
+    .links {
+      margin: 15px;
+    }
+
+    .photos {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
