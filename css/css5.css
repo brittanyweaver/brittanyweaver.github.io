@@ -1,7 +1,6 @@
-* body {
+/* main body */
+body {
     background: #CBCCD3;
-    max-width: 716px;
-    margin: 0 auto;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 300;
@@ -10,14 +9,21 @@
     text-align: left;
     color: #FFFFFF;
   }
+
+  article {
+    /* max-width: 716px; */
+    /* max-width: 716px; */
+    margin: 0 auto;
+    /* justify-content: center; */
+  }
   
   h1 {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    font-size: 90px;
+    font-size: 80px;
     text-align: left;
-    line-height: 80px;
+    line-height: 80px; /*help*/
     color: #FFFFFF;
   }
   
@@ -25,7 +31,7 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 72px;
     line-height: 109px;
     text-align: left;
     color: #FFFFFF;
@@ -35,8 +41,9 @@
     position: absolute;
     font-family: 'Manrope';
     font-style: normal;
+    
     font-weight: 600;
-    font-size: 70px;
+    font-size: 64px;
     line-height: 96px;
     text-align: center;
     color: #FFFFFF;
@@ -47,7 +54,7 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 56px;
     line-height: 82px;
     text-align: center;
     color: #FFFFFF;
@@ -58,7 +65,7 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 48px;
     line-height: 68px;
     text-align: center;
     color: #FFFFFF;
@@ -75,13 +82,30 @@
     color: #FFFFFF;
   }
 
+  nav {
+    background-color: #15B097;
+    padding: .5em;
+    position: sticky;
+    top: 0;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  nav a { 
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+
   .britt_image {
     float:left;
     margin-right: 50px;
-  }
-
-  p {
-    max-width: 100;
   }
   
   a:visited {
@@ -93,52 +117,71 @@
     color: #9A9AA0;
   }
 
+  /* .links {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  } */
+
   hr {
     display: block; height: px;
     border: 0; border-top: 1px solid white;
-    margin: 1em 0; padding: 0;
-    }
+    margin: 1em 0; 
+    padding: 0;
+  }
 
-    .photos {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* fr stands for fraction - we want two columns that take up half of the avaliable space (2)*/
-      gap: 1px;
-    }
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* fr stands for fraction - we want two columns that take up half of the avaliable space (2)*/
+    gap: 1px;
+  }
   
-    .feature {
-        width: 200px;
-        float: left;
-        padding: 20px;
-    }
+  .feature {
+    width: 200px;
+    float: left;
+    padding: 20px;
+  }
 
 
   @media screen and (max-width: 450px) { 
+    nav {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    
     h1 {
       font-family: 'Manrope';
       font-style: normal;
       font-weight: 800;
       font-size: 50px;
       text-align: left;
-      line-height: 10px;
+      line-height: 45px;
       text-align: center;
       color: #FFFFFF;
     }
 
     .britt_image {
-      height: 300px;
-      width: auto;
       margin: 30px;
+      height: auto;
+      width: 300px;
+      /* display: flex; how to make this the photo on top of the text */
     }
     
-    p {
-      margin: 15px;
-    }
-
-    .links {
-      margin: 15px;
+    article {
+      /* max-width: 716px; */
+      /* margin: 0 auto; */
+      /* margin: 15px; */
+      display: flex;
+      flex-direction: column;
     }
 
     .photos {
@@ -151,3 +194,48 @@
       align-items: center;
     }
   }
+
+  /* flex direction column */
+
+  /* how to make colored background box */
+
+  /* experience boxes on experience page */
+  
+  .experience-box {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    /* font-family: verdana, 'open sans', sans-serif; */
+    margin-bottom: 25px;
+    padding: 10px 14px 10px 44px;
+    position: relative;
+    box-shadow: 0px 1px 5px #999;
+  }
+    /* .experience-box:before {
+      font-family: FontAwesome;
+      font-size: 21px;
+      left: 14px;
+      position: absolute;
+    } */
+    .job-1 {
+      background-color: #3498db;
+    }
+    /* .webnots-information:before {
+      content: "\f129";
+      margin-left: 4px;
+    } */
+    .job-2 {
+      background-color: #f1c40f;
+    }
+    /* .webnots-question:before {
+      content: "\f128";
+      margin-left: 2px;
+    } */
+    .job-3 {
+      background-color: #16a085;
+    }
+    /* .webnots-tip:before {
+      content: "\f0eb";
+      margin-left: 2px;
+    } */
