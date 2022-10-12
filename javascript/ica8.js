@@ -5,18 +5,12 @@ function giveAlert() {
     alert('This page is prettyyyyy awesome... take a second to prepare yourself...');
 }
 
-const button = document.getElementById('button');
-
 // Change text color on mouseover
 button.addEventListener('mouseover', function handleMouseOver() {
-  button.style.color = 'red';
+  button.style.color = 'grey';
 });
 
 // Change text color back on mouseout
 button.addEventListener('mouseout', function handleMouseOut() {
-  button.style.color = 'black';
+  button.style.color = 'aqua';
 });
-
-button.addEventListener('clicked', function handleMouseClick() {
-    button.style.color = 'blue';
-  });
