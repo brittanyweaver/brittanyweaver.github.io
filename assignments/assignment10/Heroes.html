@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+
+      // check the email Cade sent if you are having trouble
+
+    async function populate() {
+
+      const requestURL = 'hr.json';
+      const request = new Request(requestURL);
+
+      const response = await fetch(request);
+      const humanResources = await response.json();
+
+      // step 1
+      console.log(humanResources.employees);
+      
+      // step 2
+      console.log(humanResources);
+      // console.log(superHeroes.members[0]);
+
+      // step 3
+    var newEmployee = {
+        "name" : "Anna",
+        "department" : "Tech",
+        "designation" : "Executive",
+        "salary" : 25600,
+        "raise-eligible" : false
+      };
+
+    humanResources.employees.push(newEmployee);
+    console.log(newEmployee)
+    
+    // step 4
+    var salaries = 0;
+
+    for (let i = 0; i < 4; i++) {
+      employeePay = humanResources.employees[i];
+      salaries = salaries + employeePay.salary;
+    }
+
+    console.log(salaries);
+
+
+
+
+
+
+}
+    
+    populate();
+
+    </script>
+  </body>
+</html>
