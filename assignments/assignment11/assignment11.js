@@ -1,10 +1,8 @@
 const jokeButton = document.querySelector('.new-joke');
 window.addEventListener("load", fetchJoke);
 jokeButton.addEventListener('click', fetchJoke);
-
-const punchlineButton = document.querySelector("punchline");
+const punchlineButton = document.querySelector(".punchline");
 punchlineButton.addEventListener("click", showPunchline);
-
 const endpoint = 'https://official-joke-api.appspot.com/random_joke';
 var punchline = "";
 
@@ -39,8 +37,7 @@ function showJoke(x) {
 }
 
 function showPunchline() {
-    // console.log(x);
-    document.getElementById("js-punchline-text").textcontent = punchline;
+    document.getElementById("js-punchline-text").textContent = punchline;
     console.log("this is a punchline :P");
 }
 
