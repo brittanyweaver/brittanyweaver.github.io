@@ -67,7 +67,7 @@ function four() {
 
 //NINE
 function six() {
-    outputInt = '十';
+    outputInt = '九';
     output.textContent += outputInt;
 }
 
