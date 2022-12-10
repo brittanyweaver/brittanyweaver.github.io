@@ -2,14 +2,14 @@
 
 /* main body */
 body {
-    background: #CBEDD5;
+    background: #FEFCF3;
     font-family: 'Inter', sans-serif;;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
     text-align: left;
-    color: #06283D;
+    color: #533d3a;
   }
 
   article {
@@ -26,7 +26,7 @@ body {
     font-size: 70px;
     text-align: center;
     line-height: 80px; /*help*/
-    color: #62B6B7;
+    color: #4f3b38b1;
   }
   
    h2 {
@@ -36,7 +36,7 @@ body {
     font-size: 72px;
     line-height: 109px;
     text-align: left;
-    color: #FFFFFF;
+    color: #4f3b38b1;
   } 
   
   h3 {
@@ -47,7 +47,7 @@ body {
     font-size: 64px;
     line-height: 96px;
     text-align: center;
-    color: #FFFFFF;
+    color: #4f3b38b1;
   }
 
   h4 {
@@ -58,7 +58,7 @@ body {
     font-size: 56px;
     line-height: 82px;
     text-align: center;
-    color: #FFFFFF;
+    color: #4f3b38b1;
   }
   
   h5 {
@@ -69,7 +69,7 @@ body {
     font-size: 48px;
     line-height: 68px;
     text-align: center;
-    color: #FFFFFF;
+    color: #4f3b38b1;
   }
 
   h6 {
@@ -80,7 +80,7 @@ body {
     font-size: 40px;
     line-height: 55px;
     text-align: center;
-    color: #FFFFFF;
+    color: #4f3b38b1;
   }
   
   img{
@@ -89,7 +89,7 @@ body {
   }
 
   nav {
-    background-color: #62B6B7;
+    background-color: #DBA39A;
     padding: .5em;
     position: sticky;
   }
@@ -103,7 +103,7 @@ body {
   }
   
   nav a { 
-    color: #fff;
+    color: #FEFCF3;
     text-decoration: none;
     padding: auto;
   }
@@ -113,29 +113,29 @@ body {
     padding: 15px;
   }
   
-  nav a {
+  /* nav a {
     color: white;
     text-decoration: none;
-  }
+  } */
 
   a {
-    color: #439A97;
+    color: #b97267;
     text-decoration: none;
   }
 
   a:hover {
     text-decoration: none;
-    color: #62B6B7;
+    color: #7e0202;
   }
 
   nav a:hover {
     text-decoration: none;
-    color: #97DECE;
+    color: #4f3b38b1;
   }
 
   hr {
     display: block; height: px;
-    border: 0; border-top: 5px solid #62B6B7;
+    border: 0; border-top: 5px solid #533d3a87;
     margin: 1em 0; 
     padding: 0;
   }
@@ -152,14 +152,14 @@ body {
 
   .experience-box {
     border-radius: 5px;
-    color: #06283D;
+    color: #1E1E24;
     margin-bottom: 25px;
     padding: 10px 14px 10px 44px;
     position: relative;
   }
 
     .job-1 {
-      background-color: #97DECE;
+      background-color: #F0DBDB;
     }
 
   .grid {
@@ -167,12 +167,15 @@ body {
     height: 606px;
     display: flex;
     flex-wrap: wrap;
+    /* justify-items: center;
+    align-items: center */
+    padding-left: 50px;
   }
 
   .square {
     height: 200px;
     width: 200px;
-    border: solid black 1px;
+    border: solid #4f3b38b1 1px;
   }
 
   .mole {
@@ -182,6 +185,8 @@ body {
 
   .video {
     align-content: center;
+    height: 500px;
+    width: 800px;
   }
 
   @media screen and (max-width: 450px) { 
@@ -197,13 +202,11 @@ body {
 
     h1 {
       /* font-family: 'Manrope'; */
-      font-style: normal;
       font-weight: 800;
       font-size: 50px;
-      text-align: left;
       line-height: 45px;
       text-align: center;
-      color: #FFFFFF;
+      color: #4f3b38b1;
     }
 
     .britt_image {
@@ -212,7 +215,7 @@ body {
       width: auto;
       display: flex;
       justify-content: center;
-      padding: 0;
+      padding-left: 30px;
       /* display: flex; how to make this the photo on top of the text */
     }
     
@@ -246,6 +249,7 @@ body {
       height: 400px;
       display: flex;
       flex-wrap: wrap;
+      padding-left: 15px;
     }
   
     .square {
@@ -257,6 +261,10 @@ body {
     .mole {
       background-image: url('../img/mole.jpg');
       background-size: cover;
+    }
+
+    .video {
+      size-adjust: relative;
     }
   }
 
