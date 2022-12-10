@@ -41,6 +41,10 @@ function showPunchline() {
     console.log("this is a punchline :P");
 }
 
+var audio = new Audio('audio_file.mp3');
+audio.play();
+
+
 // fetchJoke();
 
 // some of the jokes have a set up and delivery, some are just a joke
